@@ -6,7 +6,7 @@ import Quote from './components/Quote';
 function App() {
   return (
    <>
-    <Navbar/>
+    <Navbar name="InspireMe"/>
     <Quote/>
    </>
   );
