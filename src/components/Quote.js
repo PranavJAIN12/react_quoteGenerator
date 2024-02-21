@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 
-export default function Quote() {
+export default function Quote(props) {
     const [quote, setQuote] = useState({ text: "", author: "" });
 
     const generateQuote = () => {
@@ -22,7 +22,7 @@ export default function Quote() {
         <div className="container">
             <div className="row justify-content-center mt-5">
                 <div className="col-md-6">
-                    <div className="card">
+                    <div className="card" style={{backgroundColor:props.mode==='light'?'white':'#171717', color:props.mode==='light'?'black':'white'}}>
                         <div className="card-body">
                             <h5 className="card-title">Random Quote Generator</h5>
                             <p className="card-text">{quote.text}</p>
