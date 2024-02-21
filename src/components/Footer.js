@@ -3,7 +3,7 @@ import React from 'react'
 export default function Footer(props) {
   return (
     <div>
-      <footer className={`bg-${props.mode==='light'?'light':'dark'} text-${props.mode==='light'?'dark':'light'} py-4`}style={{position:"relative",bottom:'-580px'}}>
+      <footer className={`bg-${props.mode==='light'?'light':'dark'} text-${props.mode==='light'?'dark':'light'} py-4`}style={{position:"relative",bottom:'-574px'}}>
             <div className="container">
                 <div className="row">
                     <div className="col-md-6">
