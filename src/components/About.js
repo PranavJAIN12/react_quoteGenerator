@@ -1,9 +1,9 @@
 import React from 'react'
 
-export default function About() {
+export default function About(props) {
   return (
     <div>
-      <div className="container mt-5">
+      <div className="container mt-5"style={{backgroundColor:props.mode==='light'?'white':'black', color:props.mode==='light'?'black':'white'}}>
             <h2>About Us</h2>
             <p>
                 Welcome to InspireMe, your go-to destination for daily inspiration and motivation through thought-provoking quotes from various authors and sources. Our mission is to empower individuals with uplifting words that ignite creativity, spark change, and foster personal growth.

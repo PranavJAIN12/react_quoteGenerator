@@ -4,6 +4,8 @@ import './App.css';
 import Navbar from './components/Navbar';
 import Quote from './components/Quote';
 import Footer from './components/Footer';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import About from './components/About';
 
 function App() {
   const[Mode, setMode] = useState('light')
@@ -18,11 +20,24 @@ function App() {
     }
   }
   return (
+    <BrowserRouter>
    <>
-    <Navbar name="InspireMe" mode={Mode} toggleMode={toggleMode}/>
+    {/* <Navbar name="InspireMe" mode={Mode} toggleMode={toggleMode}/>
     <Quote mode={Mode}/>
-    <Footer mode={Mode}/>
+    <Footer mode={Mode}/> */}
+
+<Navbar name="InspireMe" mode={Mode} toggleMode={toggleMode}/>
+<Footer mode={Mode}/>
+<Routes>
+<Route path="/about" element={<About mode={Mode}/>} />
+<Route path = "/" element={<Quote mode={Mode}/>}/>
+
+
+
+
+</Routes>
    </>
+</BrowserRouter>
   );
 }
 

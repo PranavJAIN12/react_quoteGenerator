@@ -24,8 +24,8 @@ export default function Quote(props) {
                 <div className="col-md-6">
                     <div className="card" style={{backgroundColor:props.mode==='light'?'white':'#171717', color:props.mode==='light'?'black':'white'}}>
                         <div className="card-body">
-                            <h5 className="card-title">Random Quote Generator</h5>
-                            <p className="card-text">{quote.text}</p>
+                            <h6 className="card-title">Random Quote Generator</h6>
+                            <h3 className="card-text mt-3">{quote.text}</h3>
                             <p className="card-text"><em>- {quote.author}</em></p>
                             <button className="btn btn-primary" onClick={generateQuote}>Generate Quote</button>
                         </div>
